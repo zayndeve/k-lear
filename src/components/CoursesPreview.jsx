@@ -9,7 +9,7 @@ export default function CoursesPreview() {
             Asosiy kurslar
           </h2>
           <a
-            href="/courses"
+            href="/dashboard"
             className="courses-link"
           >
             Barcha kurslarni ko'rish →

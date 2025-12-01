@@ -58,7 +58,7 @@ export default function Speaking() {
               <div className="info-grid">
                 <div className="info-item">
                   <h3 className="info-label">Davomiyligi</h3>
-                  <p className="info-value">6 oy</p>
+                  <p className="info-value">3 oy</p>
                 </div>
 
                 <div className="info-item">
@@ -100,29 +100,13 @@ export default function Speaking() {
                     <h3 className="step-title">1-oy</h3>
                     <p className="step-text">Ishonch qurish · Talaffuz · Omon qolish uchun koreys tili</p>
                   </div>
-
                   <div className="process-step">
                     <h3 className="step-title">2-oy</h3>
-                    <p className="step-text">Rol o'ynash darslari · Kundalik vaziyatlar · Shadowing</p>
-                  </div>
-
-                  <div className="process-step">
-                    <h3 className="step-title">3-oy</h3>
-                    <p className="step-text">Hikoya qilish mashqlari · Nutq ravshanligi · Ovoz nazorati</p>
-                  </div>
-
-                  <div className="process-step">
-                    <h3 className="step-title">4-oy</h3>
-                    <p className="step-text">Intervyu mashqlari · Savol-javob mahorati · Rasmiy nutq</p>
-                  </div>
-
-                  <div className="process-step">
-                    <h3 className="step-title">5-oy</h3>
                     <p className="step-text">Munozara asoslari · Fikr bildirish · Dalil tuzilmasi</p>
                   </div>
 
                   <div className="process-step">
-                    <h3 className="step-title">6-oy</h3>
+                    <h3 className="step-title">3-oy</h3>
                     <p className="step-text">Ravonlik mashg'uloti · Yakuniy offline speaking imtihoni</p>
                   </div>
 

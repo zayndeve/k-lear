@@ -141,6 +141,7 @@
 }
 
 .step-title {
+  width: 100px;
   font-size: 20px;
   font-weight: 700;
   color: #1f2a48;

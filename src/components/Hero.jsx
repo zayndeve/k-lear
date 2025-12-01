@@ -25,7 +25,7 @@ export default function Hero() {
             Bepul intervyu bron qilish
           </a>
           <a
-            href="/courses"
+            href="/dashboard"
             className="hero-button hero-button-secondary"
           >
             Kurslarni ko'rish
