@@ -1,0 +1,24 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="klearnGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6C63FF"></stop>
+      <stop offset="50%" stop-color="#5CA8FF"></stop>
+      <stop offset="100%" stop-color="#F5A8FF"></stop>
+    </linearGradient>
+  </defs>
+
+  <circle cx="32" cy="32" r="30" fill="url(#klearnGradient)"></circle>
+
+  <!-- Small chat dot -->
+  <circle cx="49" cy="15" r="4" fill="#ffffff" opacity="0.9"></circle>
+
+  <!-- Inner soft circle to make it cleaner -->
+  <circle cx="32" cy="32" r="22" fill="#ffffff" opacity="0.94"></circle>
+
+  <!-- Korean character "한" (for Hanguk / Hangugeo) stylized -->
+  <path d="M22 25h20c1.1 0 2 .9 2 2v2.2c0 1.1-.9 2-2 2h-8v11c0 1.1-.9 2-2 2h-2.2c-1.1 0-2-.9-2-2v-11h-5.8c-1.1 0-2-.9-2-2V27c0-1.1.9-2 2-2zm4 4v2h12v-2H26z" fill="#1F2A48"></path>
+
+  <!-- Subtle bottom highlight -->
+  <ellipse cx="32" cy="46" rx="14" ry="3" fill="#000" opacity="0.05"></ellipse>
+</svg>
