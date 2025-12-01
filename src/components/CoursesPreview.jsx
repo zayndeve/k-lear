@@ -1,55 +1,56 @@
+import "./../styles/components/CoursesPreview.css";
+
 export default function CoursesPreview() {
   return (
-    <section className="py-12">
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-3xl font-bold text-gray-900">
-          Asosiy kurslar
-        </h2>
-        <a
-          href="/courses"
-          className="text-sm font-semibold text-skyBlue hover:underline"
-        >
-          Barcha kurslarni ko'rish →
-        </a>
-      </div>
+    <section className="courses-section">
+      <div className="section-container">
+        <div className="courses-header">
+          <h2 className="courses-title">
+            Asosiy kurslar
+          </h2>
+          <a
+            href="/courses"
+            className="courses-link"
+          >
+            Barcha kurslarni ko'rish →
+          </a>
+        </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="courses-grid">
         {/* TOPIK 1 */}
-        <div className="p-6 rounded-2xl bg-white shadow-sm border border-gray-100">
-          <p className="text-xs font-semibold text-skyBlue mb-1">
-            Boshlang'ich
+        <div className="course-card">
+          <p className="course-label course-label-sky">
+            Boshlang'ich → O'rta 
           </p>
-          <h3 className="font-bold text-lg mb-2">TOPIK 1</h3>
-          <p className="text-sm text-gray-600 mb-3">
+          <h3 className="course-title">TOPIK 1</h3>
+          <p className="course-description">
             Alifbo, asosiy grammatikalar va kundalik hayot uchun
             sodda jumlalar.
           </p>
-          <p className="text-xs text-gray-500">⏳ 8 haftalik kurs</p>
         </div>
 
         {/* TOPIK 2 */}
-        <div className="p-6 rounded-2xl bg-white shadow-sm border border-gray-100">
-          <p className="text-xs font-semibold text-softPink mb-1">
-            Boshlang'ich → O'rta
+        <div className="course-card">
+          <p className="course-label course-label-pink">
+            O'rta → Yuqori
           </p>
-          <h3 className="font-bold text-lg mb-2">TOPIK 2</h3>
-          <p className="text-sm text-gray-600 mb-3">
+          <h3 className="course-title">TOPIK 2</h3>
+          <p className="course-description">
             Matn o'qish, tinglab tushunish, imtihon formatida mashqlar.
           </p>
-          <p className="text-xs text-gray-500">⏳ 10 haftalik kurs</p>
         </div>
 
         {/* Speaking */}
-        <div className="p-6 rounded-2xl bg-white shadow-sm border border-gray-100">
-          <p className="text-xs font-semibold text-warmYellow mb-1">
-            Suhbat
+        <div className="course-card">
+          <p className="course-label course-label-yellow">
+            Suhbat → Kundalik 
           </p>
-          <h3 className="font-bold text-lg mb-2">Speaking Class</h3>
-          <p className="text-sm text-gray-600 mb-3">
+          <h3 className="course-title">Speaking Class</h3>
+          <p className="course-description">
             Universitet, ishxona, telefon, bank, konveniens store muloqotlari.
           </p>
-          <p className="text-xs text-gray-500">🎤 Haftasiga 2 marta</p>
         </div>
+      </div>
       </div>
     </section>
   );

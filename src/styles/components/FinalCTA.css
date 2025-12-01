@@ -1,0 +1,59 @@
+.final-cta-section {
+  padding: 4rem 0;
+}
+
+.final-cta-box {
+  border-radius: 1.875rem;
+  background: linear-gradient(to right, #6aa6ff, #ff8a8a);
+  color: white;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .final-cta-box {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.final-cta-content {
+  flex: 1;
+}
+
+.final-cta-title {
+  font-size: 1.875rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.final-cta-description {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (min-width: 768px) {
+  .final-cta-description {
+    font-size: 1rem;
+  }
+}
+
+.final-cta-button {
+  padding: 0.75rem 2rem;
+  border-radius: 0.75rem;
+  background-color: white;
+  color: #6aa6ff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background-color 0.2s ease-in-out;
+  display: inline-block;
+}
+
+.final-cta-button:hover {
+  background-color: #f1f5f9;
+}

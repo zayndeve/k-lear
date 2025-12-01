@@ -1,0 +1,84 @@
+.courses-section {
+  padding: 3rem 0;
+}
+
+.courses-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.courses-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.courses-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6aa6ff;
+  text-decoration: none;
+  transition: text-decoration 0.2s ease-in-out;
+}
+
+.courses-link:hover {
+  text-decoration: underline;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.course-card {
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f3f4f6;
+}
+
+.course-label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #6b7280;
+}
+
+.course-label-sky {
+  color: #2e5dbc;
+}
+
+.course-label-pink {
+  color: #2e5dbc;
+}
+
+.course-label-yellow {
+  color: #2e5dbc;
+}
+
+.course-title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.course-description {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-bottom: 0.75rem;
+  line-height: 1.625;
+}
+
+.course-duration {
+  font-size: 0.75rem;
+  color: #6b7280;
+}

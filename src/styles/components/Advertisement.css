@@ -1,0 +1,16 @@
+.advertisement-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.advertisement-video {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .advertisement-video {
+    height: 520px;
+  }
+}

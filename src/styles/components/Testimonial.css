@@ -1,0 +1,30 @@
+.testimonial-section {
+  padding: 3rem 0;
+}
+
+.testimonial-box {
+  border-radius: 1.875rem;
+  background-color: rgba(106, 166, 255, 0.05);
+  padding: 2rem;
+  border: 1px solid rgba(106, 166, 255, 0.2);
+}
+
+.testimonial-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6aa6ff;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-quote {
+  font-size: 1.125rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  line-height: 1.625;
+}
+
+.testimonial-author {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}

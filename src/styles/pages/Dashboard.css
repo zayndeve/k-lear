@@ -1,0 +1,269 @@
+/* WRAPPER: SIDEBAR + MAIN */
+.dashboard-wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #c3e8ee 0%, #faf4fb 45%, #f5daed 100%);
+  font-family: "Inter", sans-serif;
+}
+
+/* ---------------------------------------------
+   SIDEBAR
+--------------------------------------------- */
+.dashboard-sidebar {
+  width: 260px;
+  background: #6c63ff;
+  color: white;
+  padding: 50px 30px;
+  border-radius: 0 40px 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sidebar-link {
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.85;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.sidebar-link svg {
+  font-size: 20px;
+}
+
+.sidebar-link:hover {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+.sidebar-support {
+  margin-top: auto;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.sidebar-support:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.sidebar-support .support-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.sidebar-support p {
+  font-weight: 600;
+  margin: 0 0 2px 0;
+  font-size: 13px;
+}
+
+.sidebar-support span {
+  opacity: 0.85;
+  font-size: 11px;
+}
+
+/* ---------------------------------------------
+   MAIN CONTENT
+--------------------------------------------- */
+.dashboard-main {
+  flex: 1;
+  padding: 60px;
+}
+
+/* White container */
+.dashboard-card {
+  background: white;
+  border-radius: 32px;
+  padding: 50px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ececec;
+}
+
+/* ---------------------------------------------
+   DARK PROFILE PANEL (Option B)
+--------------------------------------------- */
+.profile-panel {
+  background: #1f2a48;
+  padding: 40px;
+  border-radius: 32px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; /* space inside card */
+}
+
+/* Left side */
+.profile-left {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Avatar with ring */
+.avatar-box {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid #1f2a48;
+  object-fit: cover;
+  z-index: 2;
+  position: relative;
+}
+
+.avatar-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(#ffbe44, #ff6f91, #7873f5, #44caff, #ffbe44);
+  padding: 6px;
+  z-index: 1;
+}
+
+/* Profile text */
+.profile-level {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.profile-label {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.profile-sub {
+  margin-top: 6px;
+  opacity: 0.75;
+}
+
+/* ---------------------------------------------
+   STATS
+--------------------------------------------- */
+.profile-stats {
+  display: flex;
+  gap: 40px;
+}
+
+.stat-card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.stat-label {
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.stat-graph {
+  width: 54px;
+  height: 13px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #5be77f, #3cbf5a);
+  opacity: 0.8;
+}
+
+/* ---------------------------------------------
+   BUTTON
+--------------------------------------------- */
+.improve-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.improve-btn {
+  background: #ff9eb4;
+  color: white;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0 8px 16px rgba(255, 158, 180, 0.4);
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.improve-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ---------------------------------------------
+   SKILLSET CARD
+--------------------------------------------- */
+.skillset-panel {
+  background: white;
+  border-radius: 28px;
+  padding: 32px;
+  border: 1px solid #ececec;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.skillset-header h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1f2a48;
+  margin-bottom: 0;
+}
+
+.skillset-body {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.language-tag {
+  background: linear-gradient(135deg, #a2a1af 0%, #172aff 100%);
+  color: white;
+  padding: 5px 24px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+.language-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(108, 99, 255, 0.4);
+}

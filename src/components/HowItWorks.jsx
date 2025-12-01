@@ -1,46 +1,50 @@
+import "./../styles/components/HowItWorks.css";
+
 export default function HowItWorks() {
   return (
-    <section className="py-12">
-      <p className="text-sm font-semibold text-skyBlue uppercase tracking-wide mb-3">
-        Qanday ishlaydi?
-      </p>
-      <h2 className="text-3xl font-bold text-gray-900 mb-6">
-        3 qadamda darslarga qo'shilasiz.
-      </h2>
+    <section className="how-it-works-section">
+      <div className="section-container">
+        <p className="how-it-works-label">
+          Qanday ishlaydi?
+        </p>
+        <h2 className="how-it-works-title">
+          3 qadamda darslarga qo'shilasiz.
+        </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="p-6 rounded-2xl bg-white shadow-sm border border-gray-100">
-          <p className="text-sm font-semibold text-gray-500 mb-1">
+        <div className="how-it-works-grid">
+        <div className="how-it-works-card">
+          <p className="how-it-works-step-label">
             1-qadam
           </p>
-          <h3 className="font-bold mb-2">Bepul intervyu</h3>
-          <p className="text-sm text-gray-600">
+          <h3 className="how-it-works-card-title">Bepul intervyu</h3>
+          <p className="how-it-works-card-text">
             Qisqa suhbat orqali darajangizni aniqlaymiz va maqsadlaringizni
             tinglaymiz.
           </p>
         </div>
 
-        <div className="p-6 rounded-2xl bg-white shadow-sm border border-gray-100">
-          <p className="text-sm font-semibold text-gray-500 mb-1">
+        <div className="how-it-works-card">
+          <p className="how-it-works-step-label">
             2-qadam
           </p>
-          <h3 className="font-bold mb-2">To'g'ri guruh</h3>
-          <p className="text-sm text-gray-600">
+          <h3 className="how-it-works-card-title">To'g'ri guruh</h3>
+          <p className="how-it-works-card-text">
             Sizni daraja va maqsadga mos TOPIK yoki speaking guruhiga
             joylashtiramiz.
           </p>
         </div>
 
-        <div className="p-6 rounded-2xl bg-white shadow-sm border border-gray-100">
-          <p className="text-sm font-semibold text-gray-500 mb-1">
+        <div className="how-it-works-card">
+          <p className="how-it-works-step-label">
             3-qadam
           </p>
-          <h3 className="font-bold mb-2">Tizimli darslar</h3>
-          <p className="text-sm text-gray-600">
+          <h3 className="how-it-works-card-title">Tizimli darslar</h3>
+          <p className="how-it-works-card-text">
             Haftalik reja, uy vazifalar va muntazam feedback orqali
             natijaga ishlaymiz.
           </p>
         </div>
+      </div>
       </div>
     </section>
   );

@@ -1,0 +1,23 @@
+.hero-bg {
+  width: 100%;
+  background-image: url("/src/assets/hero-gradient.svg"),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, #ffffff 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  padding-bottom: 4rem;
+  padding-top: 0.5rem;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.home-main-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
