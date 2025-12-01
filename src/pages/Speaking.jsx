@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import "../styles/pages/Speaking.css";
 import { Link } from "react-router-dom";
@@ -8,6 +9,10 @@ import { BiSupport } from "react-icons/bi";
 import { HiMicrophone } from "react-icons/hi";
 
 export default function Speaking() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <>
       <Navbar />

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import "../styles/pages/Topik2.css";
 import { Link } from "react-router-dom";
@@ -8,6 +9,10 @@ import { BiSupport } from "react-icons/bi";
 import { IoMdFlame } from "react-icons/io";
 
 export default function Topik2() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <>
       <Navbar />
