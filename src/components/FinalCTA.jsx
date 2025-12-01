@@ -7,7 +7,7 @@ export default function FinalCTA() {
         <div className="final-cta-box">
           <div className="final-cta-content">
             <h2 className="final-cta-title">
-              Keling, koreys tilini birga yengib olaylik.
+              Keling, koreys tilini birga o‘rganamiz!
             </h2>
             <p className="final-cta-description">
               Qisqa bepul intervyuga yoziling, darajangizni aniqlaymiz va
