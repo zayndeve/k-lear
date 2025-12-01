@@ -5,6 +5,7 @@ import { IoBookSharp } from "react-icons/io5";
 import { FaMicrophoneAlt } from "react-icons/fa";
 import { MdMenuBook } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
+import { IoMdFlame } from "react-icons/io";
 
 export default function Topik2() {
   return (
@@ -19,13 +20,13 @@ export default function Topik2() {
 
           <nav className="sidebar-menu">
             <Link to="/dashboard/topik1" className="sidebar-link">
-              <IoBookSharp /> TOPIK 1
+              <IoBookSharp className="icon-yellow" /> TOPIK 1
             </Link>
-            <Link to="/dashboard/topik2" className="sidebar-link active-link">
-              <MdMenuBook /> TOPIK 2
+            <Link to="/dashboard/topik2" className="sidebar-link">
+              <MdMenuBook className="icon-blue" /> TOPIK 2
             </Link>
             <Link to="/dashboard/speaking" className="sidebar-link">
-              <FaMicrophoneAlt /> Speaking
+              <FaMicrophoneAlt className="icon-green" /> Speaking
             </Link>
           </nav>
 
@@ -47,12 +48,12 @@ export default function Topik2() {
             <section className="topik2-header">
               <h1 className="topik2-title">TOPIK 2 Course</h1>
               <p className="topik2-subtitle">
-                O‘rta → yuqori darajaga 7 oyda. Akademik matnlar, tinglab tushunish,
+                O‘rta → yuqori darajaga 7 oyda. Akademik matnlarni tushunish,
                 yozuv, 고급 표현 va 실전모의고사 asosida.
               </p>
 
               <div className="topik2-badge">
-                <span className="badge-star">🔥</span>
+                <IoMdFlame className="badge-star" />
                 <span className="badge-text">Advanced course taught by TOPIK 6 Teacher</span>
               </div>
             </section>

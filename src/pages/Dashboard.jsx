@@ -21,13 +21,13 @@ export default function Dashboard() {
 
           <nav className="sidebar-menu">
             <Link to="/dashboard/topik1" className="sidebar-link">
-              <IoBookSharp /> TOPIK 1
+              <IoBookSharp className="icon-yellow" /> TOPIK 1
             </Link>
             <Link to="/dashboard/topik2" className="sidebar-link">
-              <MdMenuBook /> TOPIK 2
+              <MdMenuBook className="icon-blue" /> TOPIK 2
             </Link>
             <Link to="/dashboard/speaking" className="sidebar-link">
-              <FaMicrophoneAlt /> Speaking
+              <FaMicrophoneAlt className="icon-green" /> Speaking
             </Link>
           </nav>
 

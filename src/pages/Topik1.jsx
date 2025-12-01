@@ -5,6 +5,7 @@ import { IoBookSharp } from "react-icons/io5";
 import { FaMicrophoneAlt } from "react-icons/fa";
 import { MdMenuBook } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
+import { AiFillStar } from "react-icons/ai";
 
 export default function Topik1() {
   return (
@@ -19,13 +20,13 @@ export default function Topik1() {
 
           <nav className="sidebar-menu">
             <Link to="/dashboard/topik1" className="sidebar-link">
-              <IoBookSharp /> TOPIK 1
+              <IoBookSharp className="icon-yellow" /> TOPIK 1
             </Link>
             <Link to="/dashboard/topik2" className="sidebar-link">
-              <MdMenuBook /> TOPIK 2
+              <MdMenuBook className="icon-blue" /> TOPIK 2
             </Link>
             <Link to="/dashboard/speaking" className="sidebar-link">
-              <FaMicrophoneAlt /> Speaking
+              <FaMicrophoneAlt className="icon-green" /> Speaking
             </Link>
           </nav>
 
@@ -51,7 +52,7 @@ export default function Topik1() {
         </p>
 
         <div className="topik-badge">
-          <span className="badge-star">⭐</span>
+          <AiFillStar className="badge-star" />
           <span className="badge-text">Taught by TOPIK 6 Certified Teacher</span>
         </div>
       </section>

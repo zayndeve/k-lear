@@ -48,6 +48,18 @@
   font-size: 20px;
 }
 
+.icon-yellow {
+  color: #ffd700;
+}
+
+.icon-blue {
+  color: #5dade2;
+}
+
+.icon-green {
+  color: #7dcea0;
+}
+
 .sidebar-link:hover {
   opacity: 1;
   transform: translateX(4px);
