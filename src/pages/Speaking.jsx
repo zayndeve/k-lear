@@ -9,9 +9,15 @@ import { BiSupport } from "react-icons/bi";
 import { HiMicrophone } from "react-icons/hi";
 
 export default function Speaking() {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
+useEffect(() => {
+  // tiny delay so layout is ready on iPhone
+  setTimeout(() => {
+    const el = document.getElementById("speaking-header");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, 50);
+}, []);
 
   return (
     <>
@@ -44,7 +50,8 @@ export default function Speaking() {
           <div className="speaking-wrapper">
 
             {/* HEADER */}
-            <section className="speaking-header">
+            <section className="speaking-header" id="speaking-header">
+
               <h1 className="speaking-title">Speaking Club</h1>
               <p className="speaking-subtitle">
                 Suhbat, muloqot, real hayot vaziyatlari va ishonch qurish uchun mo‘ljallangan maxsus darslar.

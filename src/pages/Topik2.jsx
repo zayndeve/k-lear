@@ -9,9 +9,14 @@ import { BiSupport } from "react-icons/bi";
 import { IoMdFlame } from "react-icons/io";
 
 export default function Topik2() {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
+ useEffect(() => {
+  setTimeout(() => {
+    const el = document.getElementById("topik2-header");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, 50);
+}, []);
 
   return (
     <>
@@ -50,7 +55,7 @@ export default function Topik2() {
           <div className="topik2-wrapper">
 
             {/* DARK HEADER */}
-            <section className="topik2-header">
+            <section className="topik2-header" id="topik2-header">
               <h1 className="topik2-title">TOPIK 2 Course</h1>
               <p className="topik2-subtitle">
                 O‘rta → yuqori darajaga 7 oyda. Akademik matnlarni tushunish,

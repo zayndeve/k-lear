@@ -9,9 +9,15 @@ import { BiSupport } from "react-icons/bi";
 import { AiFillStar } from "react-icons/ai";
 
 export default function Topik1() {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
+useEffect(() => {
+  setTimeout(() => {
+    const el = document.getElementById("topik1-header");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, 50);
+}, []);
+
 
   return (
     <>
@@ -50,7 +56,8 @@ export default function Topik1() {
     <div className="topik-wrapper">
 
       {/* DARK HEADER */}
-      <section className="topik-header">
+      <section className="topik-header" id="topik1-header">
+
         <h1 className="topik-title">TOPIK 1 Course</h1>
         <p className="topik-subtitle">
           0 dan → 6 oy ichida mustahkam TOPIK 1 darajaga.
