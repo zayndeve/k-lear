@@ -10,14 +10,18 @@ import { HiMicrophone } from "react-icons/hi";
 
 export default function Speaking() {
 useEffect(() => {
-  // tiny delay so layout is ready on iPhone
-  setTimeout(() => {
-    const el = document.getElementById("speaking-header");
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  }, 50);
+  const isMobile = window.innerWidth <= 768; // only phones
+
+  if (isMobile) {
+    setTimeout(() => {
+      const el = document.getElementById("speaking-header");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 50);
+  }
 }, []);
+
 
   return (
     <>

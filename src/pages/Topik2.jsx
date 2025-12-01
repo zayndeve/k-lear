@@ -9,14 +9,17 @@ import { BiSupport } from "react-icons/bi";
 import { IoMdFlame } from "react-icons/io";
 
 export default function Topik2() {
- useEffect(() => {
-  setTimeout(() => {
-    const el = document.getElementById("topik2-header");
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  }, 50);
+useEffect(() => {
+  const isMobile = window.innerWidth <= 768;
+
+  if (isMobile) {
+    setTimeout(() => {
+      const el = document.getElementById("topik2-header");
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 50);
+  }
 }, []);
+
 
   return (
     <>

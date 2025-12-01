@@ -10,13 +10,16 @@ import { AiFillStar } from "react-icons/ai";
 
 export default function Topik1() {
 useEffect(() => {
-  setTimeout(() => {
-    const el = document.getElementById("topik1-header");
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  }, 50);
+  const isMobile = window.innerWidth <= 768;
+
+  if (isMobile) {
+    setTimeout(() => {
+      const el = document.getElementById("topik1-header");
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 50);
+  }
 }, []);
+
 
 
   return (
