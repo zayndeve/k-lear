@@ -6,10 +6,10 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-inner">
-        <div className="navbar-brand">
+        <Link to="/" className="navbar-brand">
           <img src={logo} alt="Zayn Korean Logo" className="navbar-logo" />
           <h1 className="navbar-title">Zayn Korean</h1>
-        </div>
+        </Link>
 
         <div className="navbar-menu">
           <a href="/" className="navbar-link">Asosiy</a>

@@ -590,3 +590,40 @@
   color: #1d4ed8;
   border-bottom: 2px solid #2563eb;
 }
+
+@media (max-width: 768px) {
+  .topikgks-wrapper {
+    padding: 40px 0 40px;
+  }
+
+  .section-container {
+    padding: 20px;
+  }
+
+  .topikgks-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .topikgks-final-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+    gap: 20px;
+  }
+
+  .topikgks-final-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .topikgks-final-actions a {
+    text-align: center;
+    width: 100%;
+  }
+
+  .topik-card,
+  .upcoming-card,
+  .topikgks-card {
+    padding: 20px;
+  }
+}

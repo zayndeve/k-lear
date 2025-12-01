@@ -76,7 +76,7 @@ export default function Topik2() {
 
                 <div className="info-item">
                   <h3 className="info-label">Narxi</h3>
-                  <p className="info-value">130,000 so‘m / oy</p>
+                  <p className="info-value">130,000 won / oy</p>
                 </div>
 
               </div>

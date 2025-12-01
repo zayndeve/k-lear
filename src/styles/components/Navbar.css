@@ -19,6 +19,8 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
 }
 
 .navbar-logo {
@@ -64,5 +66,33 @@
     flex-direction: column;
     gap: 0.5rem;
     font-size: 0.875rem;
+  }
+}
+/* ----------------------------------------------
+   MOBILE HORIZONTAL NAV (SWIPEABLE)
+---------------------------------------------- */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 20px !important;
+
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+
+    padding: 12px 0 !important;
+
+    width: 100%;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .navbar-menu::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  .navbar-link {
+    display: inline-block !important;
+    padding: 6px 4px !important;
+    font-size: 16px !important;
   }
 }

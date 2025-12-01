@@ -255,3 +255,89 @@
   margin-top: 4px;
   color: #444;
 }
+/* -----------------------------------------
+   MOBILE FIXES FOR TOPIK 1 PAGE
+----------------------------------------- */
+@media (max-width: 768px) {
+  /* Sidebar same styling as Dashboard mobile */
+  .dashboard-sidebar {
+    width: 100vw !important;
+    max-width: 100%;
+    border-radius: 0;
+    padding: 40px 26px;
+    margin-bottom: 80px;
+  }
+
+  /* Main content container */
+  .topik-main {
+    padding: 0 16px 40px;
+  }
+
+  .topik-wrapper {
+    padding: 20px !important;
+  }
+
+  /* DARK HEADER */
+  .topik-header {
+    padding: 26px !important;
+    border-radius: 20px !important;
+  }
+
+  .topik-title {
+    font-size: 28px !important;
+  }
+
+  .topik-subtitle {
+    font-size: 15px !important;
+  }
+
+  /* WHITE CARD */
+  .topik-card {
+    padding: 26px !important;
+    border-radius: 22px !important;
+  }
+
+  /* GRID FIX: 3 columns → 1 column */
+  .info-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .process-table {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .process-step {
+    padding: 20px !important;
+  }
+
+  .step-title {
+    font-size: 18px !important;
+  }
+
+  /* WHAT WE LEARN */
+  .learn-list {
+    padding-left: 16px !important;
+    font-size: 15px !important;
+  }
+
+  .section-title {
+    font-size: 22px !important;
+  }
+} /* TABLET FIX — For iPad (768px–1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .info-grid,
+  .process-table {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
+}
+/* PHONE FIX — For iPhone */
+@media (max-width: 768px) {
+  .info-grid,
+  .process-table {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+}

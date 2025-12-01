@@ -158,3 +158,139 @@
   opacity: 1 !important;
   font-weight: 700;
 }
+/* -----------------------------------------
+   MOBILE FIXES FOR TOPIK 2 PAGE
+----------------------------------------- */
+@media (max-width: 768px) {
+  /* === SIDEBAR (same mobile style as Dashboard) === */
+  .dashboard-sidebar {
+    width: 100vw !important;
+    max-width: 100%;
+    border-radius: 0;
+    padding: 40px 26px;
+    margin-bottom: 80px;
+    background: #6c63ff !important;
+  }
+
+  /* === MAIN CONTENT === */
+  .topik2-main {
+    padding: 0 16px 40px !important;
+  }
+
+  .topik2-wrapper {
+    padding: 20px !important;
+  }
+
+  /* === DARK HEADER === */
+  .topik2-header {
+    padding: 26px !important;
+    border-radius: 22px !important;
+  }
+
+  .topik2-title {
+    font-size: 30px !important;
+  }
+
+  .topik2-subtitle {
+    font-size: 15px !important;
+  }
+
+  .topik2-badge {
+    padding: 10px 18px !important;
+    gap: 8px !important;
+  }
+
+  .badge-star {
+    font-size: 16px !important;
+  }
+
+  .badge-text {
+    font-size: 14px !important;
+  }
+
+  /* === WHITE MAIN CARD === */
+  .topik2-card {
+    padding: 26px !important;
+    border-radius: 22px !important;
+  }
+
+  /* === INFO GRID → 1 COLUMN === */
+  .info-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .info-item {
+    padding: 18px !important;
+  }
+
+  .info-label {
+    font-size: 14px !important;
+  }
+
+  .info-value {
+    font-size: 20px !important;
+  }
+
+  /* === WHAT WE LEARN === */
+  .section-title {
+    font-size: 22px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .learn-list {
+    padding-left: 16px !important;
+    font-size: 15px !important;
+  }
+
+  /* === PROCESS TABLE → 1 COLUMN === */
+  .process-table {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .process-step {
+    padding: 20px !important;
+  }
+
+  .step-title {
+    width: auto !important;
+    font-size: 18px !important;
+  }
+
+  .step-text {
+    font-size: 14px !important;
+  }
+}
+/* FIX BROKEN 5-oy / 6-oy / 7-oy WRAPPING */
+.step-title {
+  white-space: nowrap !important; /* prevent breaking */
+}
+
+/* Ensure box doesn’t shrink */
+.process-step {
+  width: 100% !important;
+  min-width: 200px !important;
+}
+
+@media (max-width: 768px) {
+  .step-title {
+    font-size: 18px !important;
+    letter-spacing: 0 !important;
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  .info-grid,
+  .process-table {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
+}
+/* PHONE FIX — For iPhone */
+@media (max-width: 768px) {
+  .info-grid,
+  .process-table {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+}

@@ -279,3 +279,138 @@
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(108, 99, 255, 0.4);
 }
+@media (max-width: 768px) {
+  .dashboard-wrapper {
+    flex-direction: column;
+  }
+
+  .dashboard-sidebar {
+    width: 100%;
+    border-radius: 0;
+    padding: 30px 20px;
+  }
+
+  .dashboard-main {
+    padding: 20px;
+  }
+
+  .dashboard-card {
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  .profile-panel {
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .profile-left {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-stats {
+    justify-content: center;
+  }
+}
+/* MOBILE LAYOUT FIX */
+@media (max-width: 768px) {
+  .dashboard-wrapper {
+    flex-direction: column;
+  }
+
+  .dashboard-sidebar {
+    width: 100%;
+    border-radius: 0;
+    padding: 40px 24px 50px;
+    margin-bottom: -20px;
+    background: #6c63ff;
+  }
+
+  .dashboard-main {
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 40px;
+  }
+
+  .dashboard-card {
+    border-radius: 24px;
+    padding: 26px;
+  }
+
+  /* Profile panel format */
+  .profile-panel {
+    flex-direction: column;
+    text-align: center;
+    gap: 22px;
+    padding: 26px;
+  }
+
+  .profile-left {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .profile-stats {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .dashboard-sidebar {
+    width: 100vw !important; /* makes it EXACT screen width */
+    max-width: 100% !important; /* stops overflow */
+    border-radius: 0 !important; /* removes curve */
+    padding: 40px 26px !important; /* keeps spacing nice */
+    margin: 0 !important;
+    background: #6c63ff !important; /* fully purple background */
+  }
+
+  .dashboard-wrapper {
+    flex-direction: column !important;
+  }
+
+  .dashboard-main {
+    padding: 0 16px 40px !important;
+    margin-top: -10px !important; /* pulls content up slightly */
+  }
+
+  .dashboard-card {
+    border-radius: 24px !important;
+    padding: 26px !important;
+  }
+}
+@media (max-width: 768px) {
+  .dashboard-sidebar {
+    width: 100vw !important;
+    max-width: 100% !important;
+    border-radius: 0 !important;
+    padding: 40px 26px !important;
+    background: #6c63ff !important;
+
+    margin: 0 !important; /* reset everything first */
+    margin-bottom: 86px !important; /* ⭐ your desired spacing ⭐ */
+  }
+
+  .dashboard-wrapper {
+    flex-direction: column !important;
+  }
+
+  .dashboard-main {
+    padding: 0 16px 40px !important;
+    margin-top: 0 !important;
+  }
+
+  .dashboard-card {
+    padding: 28px !important;
+    border-radius: 24px !important;
+  }
+}
+@media (max-width: 768px) {
+  .sidebar-support {
+    margin-top: 40px !important; /* ⭐ clean spacing on mobile ⭐ */
+  }
+}
